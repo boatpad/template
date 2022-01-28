@@ -33,10 +33,10 @@ Yacht application or brokerage application can be made independently on the Boat
 3. Lottery: The lottery will be done from a random ticket bag with Chainlink VRF. The main and alternate winners will be chosen
 
 
-4. Sale: The winner of the lottery and the yacht owner must carry out the buying and selling process. In order for the sale to take place, the agency and broker must additionally approve. If the purchase and sale is not realized, 70% of the budget will be refunded to all participants by the smart contract
+4. Sale: The winner of the lottery and the yacht owner must carry out the buying and selling process. In order for the sale to take place, the agency and broker must additionally approve. If the purchase and sale is not realized, 80% of the budget will be refunded to all participants by the smart contract
 
 
-5. Sold: With the approval of the agent, the smart contract will send 97% of the yacht budget to the yacht owner and 3% to the broker. The smart contract will send 70% of the increment fee to the system administrator, 15% to the yacht owner, 5% to the broker and 10% to the agent
+5. Sold: With the approval of the agent, the smart contract will send 97% of the yacht budget to the yacht owner and 3% to the broker. The smart contract will send 60% of the increment fee to the system administrator, 15% to the yacht owner, 5% to the broker, 10% to the surveyor and 10% to the agent
 
 
 # Development
