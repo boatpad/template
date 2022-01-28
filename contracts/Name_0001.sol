@@ -248,8 +248,8 @@ LotteryDistribution {
         _;
     }
 
-    function transferChainLinkRemain() public onlyRole(ADMIN_ROLE){
-        payable(_msgSender()).transfer(LINK.balanceOf(address(this)));
+    function withdrawLinkRemain() public onlyRole(ADMIN_ROLE) {
+        LINK.transfer(msg.sender, LINK.balanceOf(address(this)));
     }
 
 }
