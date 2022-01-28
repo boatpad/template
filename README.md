@@ -3,7 +3,15 @@ BoatPad is the first decentralized real Yacht Lottery Platform on the Polygon (M
 
 Thanks to BoatPad, you can participate in the yacht lottery and win a real yacht.
 
+[Web Site](https://boatpad.io/)
 
+[Twitter](https://twitter.com/BoatPadIO)
+
+[Telegram Channel](https://t.me/boatpad_io)
+
+[Telegram Group](https://t.me/boatpadiopublic)
+
+[Medium](https://medium.com/@BoatPadIO)
 
 ## What Is BoatPad?
 
