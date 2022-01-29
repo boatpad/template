@@ -27,7 +27,7 @@ Yacht application or brokerage application can be made independently on the Boat
 1. Buy Ticket: Anyone with a Metamask wallet can participate in the lottery. In order to complete the lottery, the yacht price and the 1-year expense price must be collected. If not collected the budget, the 90% of the refund will be given back to all participants by the smart contract
 
 
-2. Increment: After the yacht price and 1 year yacht expenses are collected, the costs for the system administrator, yacht owner, agent and broker will be determined
+2. Raise: After the yacht price and 1 year yacht expenses are collected, the costs for the system administrator, yacht owner, agent and broker will be determined
 
 
 3. Lottery: The lottery will be done from a random ticket bag with Chainlink VRF. The main and alternate winners will be chosen
@@ -36,7 +36,7 @@ Yacht application or brokerage application can be made independently on the Boat
 4. Sale: The winner of the lottery and the yacht owner must carry out the buying and selling process. In order for the sale to take place, the agency and broker must additionally approve. If the purchase and sale is not realized, 80% of the budget will be refunded to all participants by the smart contract
 
 
-5. Sold: With the approval of the agent, the smart contract will send 97% of the yacht budget to the yacht owner and 3% to the broker. The smart contract will send 60% of the increment fee to the system administrator, 15% to the yacht owner, 5% to the broker, 10% to the surveyor and 10% to the agent
+5. Sold: With the approval of the agent, the smart contract will send 97% of the yacht budget to the yacht owner and 3% to the broker. The smart contract will send 60% of the Raise fee to the system administrator, 15% to the yacht owner, 5% to the broker, 10% to the surveyor and 10% to the agent
 
 
 # Development

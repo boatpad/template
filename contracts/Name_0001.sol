@@ -38,7 +38,7 @@ LotteryDistribution {
     event AgencyApproveForSale(bool agencyApproveForSale);
     event BrokerApproveForSale(bool brokerApproveForSale);
     event SurveyorApproveForSale(bool surveyorApproveForSale);
-    event WinnerApproveForSale(bool winnerApproveForSale,LOTTERY_STATE lotteryState);
+    event WinnerApproveForSale(bool winnerApproveForSale, LOTTERY_STATE lotteryState);
     event ChangeLotteryState(LOTTERY_STATE lotteryState);
     event PickWinners(address[] indexed winners);
 
@@ -70,7 +70,7 @@ LotteryDistribution {
         _ticketPrice = 1 * (10 ** 18);
         _yachtPrice = 5 * (10 ** 18);
         _1YearYachtExpenses = 1 * (10 ** 18);
-        _raiseRatio=100;
+        _raiseRatio = 150;
         _grantRole(YACHT_OWNER_ROLE, _yachtOwner);
         _grantRole(BROKER_ROLE, _broker);
         _grantRole(AGENCY_ROLE, _agency);
@@ -172,13 +172,13 @@ LotteryDistribution {
         if (_yachtPrice.add(_1YearYachtExpenses) < getBalance()) {
             _lottery_state = LOTTERY_STATE.OPEN_RAISE_BUY_TICKET;
         }
-        if(_yachtPrice.add(_1YearYachtExpenses).mul(1 + (_raiseRatio/100))<getBalance()){
+        if (_yachtPrice.add(_1YearYachtExpenses).mul(1 + (_raiseRatio / 100)) < getBalance()) {
             _lottery_state = LOTTERY_STATE.LOTTERY_TIME;
         }
     }
 
     function generateWinners(uint256 randomness) private {
-        uint256[] memory winnerRandomness=expand(randomness,_winnerCount);
+        uint256[] memory winnerRandomness = expand(randomness, _winnerCount);
         for (uint256 i = 0; i < _winnerCount; i++) {
             uint256 winningTicket = _ticketsArray[winnerRandomness[i] % _ticketsArray.length];
             address winnerAddress = _tickets[winningTicket];
@@ -233,6 +233,20 @@ LotteryDistribution {
         _unpause();
     }
 
+    function withdrawLinkRemain() public onlyRole(ADMIN_ROLE) {
+        LINK.transfer(msg.sender, LINK.balanceOf(address(this)));
+    }
+
+    function getSummary() public view returns (uint256, uint256, uint256, uint256, uint256) {
+        return (
+        getLotteryState(),
+        getYachtPrice().div(10 ** 18),
+        getBalance().div(10 ** 18),
+        getTicketPrice().div(10 ** 18),
+        getTotalPlayers()
+        );
+    }
+
     modifier buyRequire(){
         require(msg.value >= _ticketPrice, "Not enough MATIC");
         require(msg.value.mod(_ticketPrice, "MATIC should be multiples of ticket prices.") == 0);
@@ -246,10 +260,6 @@ LotteryDistribution {
         require(_brokerApproveForSale, "Broker must approve Sale");
         require(_lottery_state == LOTTERY_STATE.OPEN_SALE_TRANSACTION);
         _;
-    }
-
-    function withdrawLinkRemain() public onlyRole(ADMIN_ROLE) {
-        LINK.transfer(msg.sender, LINK.balanceOf(address(this)));
     }
 
 }
