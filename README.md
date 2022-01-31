@@ -1,11 +1,11 @@
 # INTRO
-BoatPad is the first decentralized real Yacht Lottery Platform on the Polygon (MATIC) network.
+BoatsPad is the first decentralized real Yacht Lottery Platform on the Polygon (MATIC) network.
 
-Thanks to BoatPad, you can participate in the yacht lottery and win a real yacht.
+Thanks to BoatsPad, you can participate in the yacht lottery and win a real yacht.
 
-[Web Site](https://boatpad.io/)
+[Web Site](https://boatspad.com/)
 
-[Twitter](https://twitter.com/BoatPadIO)
+[Twitter](https://twitter.com/BoatsPad)
 
 [Telegram Channel](https://t.me/boatpad_io)
 
@@ -13,15 +13,15 @@ Thanks to BoatPad, you can participate in the yacht lottery and win a real yacht
 
 [Medium](https://medium.com/@BoatPadIO)
 
-## What Is BoatPad?
+## What Is BoatsPad?
 
-BoatPad is a decentralized yacht lottery and real yacht selling platform on the Polygon network. It is necessary to buy a minimum of 1 and a maximum 100 tickets to participate in the yacht lottery. Buying more tickets increases the chances of winning a real yacht. If the ticket sales process is not completed or the yacht sales process is not completed, the ticket fees will be sent to the participants back. In addition, each ticket to be issued will be a reliable and unbiased unique number randomly generated using Chainlink VRF. There is a smart contract for each yacht. Therefore, there is no human factor at the yacht lottery.
+BoatsPad is a decentralized yacht lottery and real yacht selling platform on the Polygon network. It is necessary to buy a minimum of 1 and a maximum 100 tickets to participate in the yacht lottery. Buying more tickets increases the chances of winning a real yacht. If the ticket sales process is not completed or the yacht sales process is not completed, the ticket fees will be sent to the participants back. In addition, each ticket to be issued will be a reliable and unbiased unique number randomly generated using Chainlink VRF. There is a smart contract for each yacht. Therefore, there is no human factor at the yacht lottery.
 
 The fact that yacht prices are expensive does not mean that you can no longer own a real yacht. You can win a real yacht for 1 ticket (~$1). The winner of the lottery will be a real yacht owner and will receive 1 year yacht expenses as a reward.
 
 ### Polygon (MATIC) provides you to trade with low costs.
 
-Yacht application or brokerage application can be made independently on the BoatPad platform. All transactions, from yacht price to sales, will be controlled by reliable agents. Each yacht contract includes system administrator, yacht owner, agent, broker and participants.
+Yacht application or brokerage application can be made independently on the BoatsPad platform. All transactions, from yacht price to sales, will be controlled by reliable agents. Each yacht contract includes system administrator, yacht owner, agent, broker and participants.
 
 # How To
 1. Buy Ticket: Anyone with a Metamask wallet can participate in the lottery. In order to complete the lottery, the yacht price and the 1-year expense price must be collected. If not collected the budget, the 90% of the refund will be given back to all participants by the smart contract
