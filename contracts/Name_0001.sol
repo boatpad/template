@@ -247,6 +247,16 @@ LotteryDistribution {
         );
     }
 
+    function getAddressSummary() public view returns (address,address,address,address,address){
+        return (
+        _admin,
+        _agency,
+        _surveyor,
+        _broker,
+        _yachtOwner
+        );
+    }
+
     modifier buyRequire(){
         require(msg.value >= _ticketPrice, "Not enough MATIC");
         require(msg.value.mod(_ticketPrice, "MATIC should be multiples of ticket prices.") == 0);
